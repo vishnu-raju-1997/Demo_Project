@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>National</title>
+  <style>
+    body {
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url(https://www.publicdomainpictures.net/pictures/320000/velka/background-image.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+    }
+
+    /* CSS for header */
+    .header {
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 36px;
+      color: #2196F3; /* Material Blue */
+    }
+
+    /* CSS for main element */
+    .security-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      margin: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .security {
+      text-align: center;
+    }
+
+    .security img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .security h2 {
+      color: #333;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .security p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    /* Styling for Learn More button */
+    .learn-more-button {
+      background: linear-gradient(to right, #2196F3, #1976D2); /* Gradient from light to dark blue */
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: background 0.3s;
+    }
+
+    .learn-more-button:hover {
+      background: linear-gradient(to right, #1565C0, #0D47A1); /* Darker gradient on hover */
+    }
+
+    /* CSS for footer */
+    .footer {
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1>National Security</h1>
+  </header>
+  <main>
+    <div class="security-section">
+      <div class="security">
+        <img src="https://mc.webpcache.epapr.in/mcms.php?size=large&in=https://mcmscache.epapr.in/post_images/website_350/post_28775967/full.jpg" alt="National Security Earth">
+        <h2>Border Protection</h2>
+        <p>Ensure the safety and security of our borders through effective border protection measures and surveillance.</p>
+        <a href="{% url 'border' %}" class="learn-more-button">Register Here</a>
+      </div>
+
+      <div class="security">
+        <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Use_Cases_for_Cyber_Security.jpg" alt="National Security Cyber">
+        <h2>Cybersecurity</h2>
+        <p>Guard against cyber threats and attacks, securing critical infrastructure and sensitive information.</p>
+        <a href="{% url 'cyber' %}" class="learn-more-button">Register Here</a>
+      </div>
+
+       <div class="security">
+         <img src="https://www.livemint.com/lm-img/img/2023/11/21/600x338/2-0-1320988113-PTI2-8-2016-000258B-0_1679977272826_1700551754547.jpg" alt="Terrorist Attack">
+         <h2>Terrorist Threat</h2>
+         <p>Stay informed about the latest developments, analyze threats, and take measures to protect the public from potential terrorist attacks.</p>
+         <a href="{% url 'terrorist' %}" class="learn-more-button">Register Here</a>
+       </div>
+        
+  </main>
+  <footer class="footer">
+    <p>&copy; 2023 National Security</p>
+  </footer>
+</body>
+
+</html>
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natural</title>
+  <style>
+    body {
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url(https://www.publicdomainpictures.net/pictures/320000/velka/background-image.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+    }
+
+    /* CSS for header */
+    .header {
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 36px;
+      color: #ff5722; /* Amber 700 */
+    }
+
+    /* CSS for main element */
+    .calamity-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      margin: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .calamity {
+      text-align: center;
+    }
+
+    .calamity img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .calamity h2 {
+      color: #333;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .calamity p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    /* Styling for Learn More button */
+    .learn-more-button {
+      background: linear-gradient(to right, #e91e63, #9c27b0); /* Gradient from pink to purple */
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: background 0.3s;
+    }
+
+    .learn-more-button:hover {
+      background: linear-gradient(to right, #ad1457, #6a1b9a); /* Darker gradient on hover */
+    }
+
+    /* CSS for footer */
+    .footer {
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Natural Calamities</h1>
+  </header>
+  <main>
+    <div class="calamity-section">
+      <div class="calamity">
+        <img src="https://d.newsweek.com/en/full/1055701/gettyimages-977515898.jpg?w=1200&f=68b33f00b8d14711ec8005b245b44ee8" alt="Earthquake">
+        <h2>Earthquake</h2>
+        <p>If an earthquake occurs, drop to the ground, take cover under furniture or against an interior wall, and hold on until shaking stops.</p>
+        <a href="{% url 'earthquake' %} " class="learn-more-button">Learn More</a>
+      </div>
+
+      <div class="calamity">
+        <img src="https://cdn.britannica.com/90/191790-050-092C8C2A/Wildfire-Stanislaus-National-Forest-California-2013.jpg" alt="Wildfire">
+        <h2>Wildfire</h2>
+        <p>If threatened by a wildfire, follow evacuation orders, pack essential items, and avoid areas with thick smoke. Stay informed.</p>
+        <a href="{% url 'wildfire' %}" class="learn-more-button">Learn More</a>
+      </div>
+
+      <div class="calamity">
+        <img src="https://i.natgeofe.com/k/7d906c71-1105-4048-b32b-a55b1b04e3bc/OG_Floods_KIDS_0922_3x2.jpg" alt="Flood">
+        <h2>Flood</h2>
+        <p>In case of a flood, move to higher ground, avoid floodwaters, and follow emergency instructions. Be prepared with a flood emergency kit.</p>
+        <a href="{% url 'flood' %}" class="learn-more-button">Learn More</a>
+      </div>
+
+
+      <div class="calamity">
+        <img src="https://scitechdaily.com/images/Giant-Volcano-Eruption-Mountains.jpg" alt="Volcanic Eruption">
+        <h2>Volcanic Eruption</h2>
+        <p>In the event of a volcanic eruption, follow evacuation orders, protect yourself from ashfall, and stay informed through reliable sources.</p>
+        <a href="{% url 'volcano' %}" class="learn-more-button">Learn More</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2023 Natural Calamities</p>
+  </footer>
+</body>
+
+</html>

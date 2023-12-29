@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical</title>
+  <style>
+    body {
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url(https://images.unsplash.com/photo-1630964046403-8b745c1e3c69?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zmlyc3QlMjBhaWR8ZW58MHx8MHx8fDA%3D);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+    }
+
+    /* CSS for header */
+    .header {
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 36px;
+      color: #4285f4; /* Google Blue */
+    }
+
+    /* CSS for main element */
+    .emergency-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      margin: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .emergency {
+      text-align: center;
+    }
+
+    .emergency img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .emergency h2 {
+      color: #333;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .emergency p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    /* Styling for Learn More button */
+    .learn-more-button {
+      background: linear-gradient(to right, #4CAF50, #2196F3); /* Gradient from green to blue */
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: background 0.3s;
+    }
+
+    .learn-more-button:hover {
+      background: linear-gradient(to right, #45a049, #1e87f0); /* Darker gradient on hover */
+    }
+
+    /* CSS for footer */
+    .footer {
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Medical Emergency</h1>
+  </header>
+  <main>
+    <div class="emergency-section">
+      <div class="emergency">
+        <img src="https://th.bing.com/th/id/OIP.jF_xix_nDu62fYOL6HmgeQHaE7?rs=1&pid=ImgDetMain" alt="Dog Bite">
+        <h2>Dog Bite</h2>
+        <p>If bitten by a dog, wash the wound with soap and water and seek medical attention. Do not provoke the dog and try to remain calm.</p>
+        <a href="https://www.youtube.com/watch?v=iwLVsH5CN0o&pp=ygUWZG9nYml0ZSBmaXJzdGFpZCB2aWRlbw%3D%3D" class="learn-more-button">Learn More</a>
+      </div>
+
+      <div class="emergency">
+        <img src="https://www.institutefornaturalhealing.com/wp-content/uploads/2021/06/heart-attack-2.jpg" alt="Heart Attack">
+        <h2>Heart Attack</h2>
+        <p>If experiencing symptoms of a heart attack (chest pain, shortness of breath), call emergency services immediately and chew aspirin if available.</p>
+        <a href="https://www.youtube.com/watch?v=5x0fVTwsrrQ&pp=ygUXaGVhcnQgYXR0YWNrIGZpcnN0IGFpZCA%3D" class="learn-more-button">Learn More</a>
+      </div>
+
+
+      <div class="emergency">
+        <img src="https://th.bing.com/th/id/OIP.1rBHMI9EikG3WQaxeRpnKQAAAA?rs=1&pid=ImgDetMain" alt="Burns">
+        <h2>Burns</h2>
+        <p>If burned, cool the affected area with cold running water for at least 10 minutes. Cover the burn with a clean, non-stick bandage.</p>
+        <a href="https://www.youtube.com/watch?v=Oi2_eneJYhs&pp=ygUZYnVybnMgZmlyc3QgYWlkIGFuaW1hdGlvbg%3D%3D" class="learn-more-button">Learn More</a>
+      </div>
+
+      <div class="emergency">
+        <img src="https://th.bing.com/th/id/OIP.HuNmHZvH50sUM9g9-EFc5wHaFj?rs=1&pid=ImgDetMain" alt="Choking">
+        <h2>Choking</h2>
+        <p>If someone is choking, perform the Heimlich maneuver by standing behind the person and applying upward pressure on the abdomen, just above the navel.</p>
+       <a href="https://youtu.be/PeWQrTUt4JA" class="learn-more-button">Learn More</a>
+      </div>
+
+      <div class="emergency">
+        <img src="https://im.indiatimes.in/content/2022/Nov/ischemic-stroke2_636f5b6d63751.jpg" alt="Stroke">
+        <h2>Stroke</h2>
+        <p>If someone shows signs of a stroke (facial drooping, arm weakness, speech difficulty), call emergency services immediately.</p>
+      <a href="https://www.youtube.com/watch?v=vc9OF64H4sE&pp=ygUac3Ryb2tlIGZpcnN0IGFpZCBhbmltYXRpb24%3D" class="learn-more-button">Learn More</a>
+      </div>
+
+      <div class="emergency">
+        <img src="https://www.verywellhealth.com/thmb/R4ZMD0ccuPDYhONjbrhb6DcC118=/4292x2911/filters:fill(87E3EF,1)/x-ray-showing-displaced-fracture-of-the-humerus-h-colorized-version-of-86129-139825991-5c45d7cf46e0fb00015d63d8.jpg" alt="Fracture">
+        <h2>Fracture</h2>
+        <p>If someone has a suspected fracture, immobilize the injured area and seek medical attention. Do not try to realign the bones.</p>
+       <a href="https://www.youtube.com/watch?v=sPzXAVNVJr0&pp=ygUcZnJhY3R1cmUgZmlyc3QgYWlkIGFuaW1hdGlvbg%3D%3D" class="learn-more-button">Learn More</a>
+      </div>
+
+      <div class="emergency">
+        <img src="https://th.bing.com/th/id/OIP.I2NVqJqQWY1TvO22uwUrsAHaFj?rs=1&pid=ImgDetMain" alt="Allergic Reaction">
+        <h2>Allergic Reaction</h2>
+        <p>If someone has a severe allergic reaction (difficulty breathing, swelling), use an epinephrine auto-injector if available and seek emergency medical help.</p>
+       <a href="https://youtu.be/mNMvS89eVgg" class="learn-more-button">Learn More</a>
+      </div>
+
+      <div class="emergency">
+        <img src="https://th.bing.com/th/id/OIP.FZduL7cna-ouZtAsKIWKRgHaEV?rs=1&pid=ImgDetMain" alt="Seizure">
+        <h2>Seizure</h2>
+        <p>If someone is having a seizure, stay calm, protect them from injury, and time the seizure. Call for medical help if it lasts longer than 5 minutes.</p>
+        <a href="https://www.youtube.com/watch?v=jJWfHHqfSbk&pp=ygUbc2VpenVyZSBmaXJzdCBhaWQgYW5pbWF0aW9u" class="learn-more-button">Learn More</a>
+      </div>
+
+      <div class="emergency">
+        <img src="https://th.bing.com/th/id/OIP.hvlYGRQiehwhYv1BW-UuWAHaE8?rs=1&pid=ImgDetMain" alt="Poisoning">
+        <h2>Poisoning</h2>
+        <p>If someone is poisoned, call the poison control center immediately. Do not try to induce vomiting unless instructed by professionals.</p>
+        <a href="https://www.youtube.com/watch?v=oxb_EoB9avY&pp=ygUdcG9pc29uaW5nIGZpcnN0IGFpZCBhbmltYXRpb24%3D" class="learn-more-button">Learn More</a>
+      </div>
+
+      <div class="emergency">
+        <img src="https://th.bing.com/th/id/OIP.G7tca6XZ5sTZ7fPw3v09TAHaE8?rs=1&pid=ImgDetMain" alt="Drowning">
+        <h2>Drowning</h2>
+        <p>If someone is drowning, call emergency services, and perform CPR if trained. Remove them from the water and begin rescue breathing.</p>
+        <a href="https://youtu.be/N9i3oSSjbN8" class="learn-more-button">Learn More</a>
+      </div>
+ </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2023 Medical Emergency</p>
+  </footer>
+</body>
+
+</html>
